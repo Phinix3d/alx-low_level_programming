@@ -4,10 +4,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * struct - Struct op
+ * struct op - Struct op
  *
  * @op: The operator
- * @f: The function associated
+ * @f: The function associated with the operator
+ *
+ * Description: This struct is used to associate operators with functions.
  */
 typedef struct op
 {
