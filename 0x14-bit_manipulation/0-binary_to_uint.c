@@ -1,6 +1,21 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
+/**
+ * _strlen - calculate the length of string
+ * @b: pointer to string
+ * Return: the length of string
+ */
+unsigned int _strlen(const char *b)
+{
+	unsigned int i = 0;
+
+	while (*b)
+	{
+		b++;
+		i++;
+	}
+	return (i);
+}
 
 /**
  * binary_to_uint - converts a binary number to unsigned int
@@ -12,7 +27,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0, i = strlen(b) - 1;
+	unsigned int n = 0, i = _strlen(b) - 1;
 
 	if (b == NULL)
 		return (0);
